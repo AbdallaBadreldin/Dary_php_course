@@ -1,0 +1,14 @@
+#allData {
+  text-align: center;
+  background-color: blue;
+  color: antiquewhite;
+  cursor:crosshair;
+  font: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#allData:hover {
+  background-color: black;
+  color: antiquewhite;
+  font-weight: lighter;
+}
