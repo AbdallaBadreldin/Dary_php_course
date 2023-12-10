@@ -1,4 +1,4 @@
-</body>
+
 <footer>
 <h1 id="allData">All database DATA </h1>
     <?php

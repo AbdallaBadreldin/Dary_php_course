@@ -1,0 +1,75 @@
+#allData {
+  text-align: center;
+  background-color: blue;
+  color: antiquewhite;
+  cursor: crosshair;
+  font: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#allData:hover {
+  background-color: black;
+  color: antiquewhite;
+  font-weight: lighter;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+header {
+  /* text-align: center; */
+  height: 40px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px #000;
+}
+/* we align text inside div */
+div {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  /* vertical-align: text-bottom; */
+  /* vertical-align: super;
+  position:relative; */
+  right: 10%;
+}
+/* we remove the black points before the words */
+ul li {
+  text-align: center;
+  display: inline;
+  list-style: none;
+}
+/* we make it black withour underline for link */
+ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 0px 0px 0px 10px;
+}
+input {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px #666;
+  width: 240px;
+  height: 30px;
+  background-color: #f2f2f2;
+}
+button {
+  text-align: center;
+  width: 240px;
+  height: 60px;
+  background-color: #000;
+  color: #ffffff;
+}
+form {
+}
