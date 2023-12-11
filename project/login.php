@@ -4,10 +4,10 @@ include_once "./includes/head.php";
 ?>
 <h1>LOG IN</h1>
 <p>No Account? <a href="register.php">Register</a></p>
-<form action="" method="post">
+<form action="./includes/login-inc.php" method="post">
     <input type="text" name="username" placeholder="User-name">
     <input type="text" name="password" placeholder="Pass-word">
-    <button type="submit">Login</button>
+    <button type="submit" name="submit">Login</button>
 </form>
 
 <?php include_once "./includes/footer.php"; ?>

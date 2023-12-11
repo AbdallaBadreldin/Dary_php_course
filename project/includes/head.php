@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <header id="header">
     <div>
         <nav>
