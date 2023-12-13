@@ -20,8 +20,8 @@ if (isset($_POST['submit'])) {
     if (empty($uesrname) || empty($password) || empty($confirmPassword)) {
         header("Location: ../register.php?error=\"empty\"");
         exit();
-    } else if (!preg_match("@^/*[a-zA-Z_]{2,15}./*[0-9_]{3,6}$/", "$uesrname")) {
-    // } else if (!preg_match("/.*[a-zA-Z0-9_]/", "$uesrname")) {
+    // } else if (!preg_match("@^/*[a-zA-Z_]{2,15}./*[0-9_]{3,6}$/", "$uesrname")) {
+    } else if (!preg_match("/.*[a-zA-Z0-9_]/", "$uesrname")) {
         header("Location: ../register.php?error=\"notvalid\"");
         exit();
     } else if ($password !== $confirmPassword) {
@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
     //is username already exist in database ?
     else {
         $sql = "SELECT username FROM users WHERE username = ?";
-        $stmt = mysqli_stmt_init($conn);
+        $stmt = mysqli_stmt_init($connection);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ../register.php?error=error");
             exit();
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
                 exit();
             } else {
                 $sql = "INSERT INTO users(username,password) VALUES(?,?)";
-                $stmt = mysqli_stmt_init($conn);
+                $stmt = mysqli_stmt_init($connection);
                ///sql error
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../register.php?error=error");
